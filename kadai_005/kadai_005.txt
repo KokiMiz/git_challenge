@@ -1,0 +1,15 @@
+﻿try { . "c:\Users\mochy\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+cd desktop
+mkdir git_challenge
+cd git_challenge
+git init
+echo Hello, world! > hello_world.txt
+git add hello_world.txt
+git commit -m "hello_world.txt を追加"
+echo こんにちは、世界！ >> hello_world.txt
+git add hello_world.txt
+git commit -m "日本語訳を追加"
+git log --oneline
+cd desktop
+cd ..
+mkdir kadai_005
